@@ -1,9 +1,5 @@
-name: TemplatePlugin
+name: blockracingaddon
 version: 1.0
 api-version: 1.21
-main: com.author.template.TemplatePlugin
+main: cn.cutelittlesky.cutelittlesky.blockracingaddon
 
-commands:
-  test:
-    description: Tests the plugin
-    usage: /test
