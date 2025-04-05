@@ -1,0 +1,9 @@
+name: TemplatePlugin
+version: 1.0
+api-version: 1.21
+main: com.author.template.TemplatePlugin
+
+commands:
+  test:
+    description: Tests the plugin
+    usage: /test
