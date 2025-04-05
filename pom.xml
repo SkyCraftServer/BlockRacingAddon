@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.cutelittlesky.cutelittlesky</groupId>
-    <artifactId>mc-plugin-template</artifactId>
+    <artifactId>blockracingaddon</artifactId>
     <version>1.0</version>
 
     <properties>
