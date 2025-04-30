@@ -1,6 +1,7 @@
 package cn.cutelittlesky.cutelittlesky;
 
 import org.bukkit.Material;
+import org.bukkit.entity.Ageable;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -57,4 +58,11 @@ public class blockracingaddon extends JavaPlugin implements Listener {
                 );
             }
         }
+        @EventHandler
+        public void onSnifferDeath(EntityDeathEvent event) {
+            if (event.getEntityType() == EntityType.SNIFFER) {
+                event.getDrops().add(new ItemStack(Material.TORCHFLOWER, 1));
+                }
+            }
+
     }
