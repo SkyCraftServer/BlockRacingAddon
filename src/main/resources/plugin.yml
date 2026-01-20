@@ -1,5 +1,7 @@
-name: blockracingaddon
-version: 1.0
-api-version: 1.21
-main: cn.cutelittlesky.cutelittlesky.blockracingaddon
-
+name: BlockRacingAddon
+version: 1.1
+api-version: 1.21.11
+main: cn.cutelittlesky.cutelittlesky.BlockRacingAddon
+authors:
+  - CuteLittleSky
+description: An addon plugin for BlockRacing

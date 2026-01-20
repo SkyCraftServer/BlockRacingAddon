@@ -5,18 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.cutelittlesky.cutelittlesky</groupId>
-    <artifactId>blockracingaddon</artifactId>
-    <version>1.0</version>
+    <artifactId>BlockRacingAddon</artifactId>
+    <version>1.1</version>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
+            <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.21.4-R0.1-20250325.160956-56</version>
+            <version>1.21.11-R0.2-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

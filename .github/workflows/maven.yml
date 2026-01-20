@@ -14,4 +14,11 @@ jobs:
       with:
         java-version: 21
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn package --file pom.xml
+    - name: Get build artifact ready
+      run: mkdir staging && cp target/*.jar staging
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v6
+      with:
+        name: Dev Build
+        path: staging
