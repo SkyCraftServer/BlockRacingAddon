@@ -5,3 +5,5 @@ main: cn.cutelittlesky.cutelittlesky.BlockRacingAddon
 authors:
   - CuteLittleSky
 description: An addon plugin for BlockRacing
+loadbefore:
+  - BlockRacing
