@@ -12,6 +12,7 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BlockRacingAddon extends JavaPlugin implements Listener {
@@ -19,6 +20,15 @@ public class BlockRacingAddon extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
+        
+        // 检测 BlockRacing 插件是否已加载
+        Plugin blockRacingPlugin = getServer().getPluginManager().getPlugin("BlockRacing");
+        if (blockRacingPlugin != null && blockRacingPlugin.isEnabled()) {
+            getLogger().info("检测到 BlockRacing 插件已加载，版本: " + blockRacingPlugin.getDescription().getVersion());
+        } else {
+            getLogger().warning("未检测到 BlockRacing 插件，部分功能可能无法使用");
+        }
+        
         getLogger().info("BlockRacingAddon enabled!");
     }
 
@@ -113,5 +123,31 @@ public class BlockRacingAddon extends JavaPlugin implements Listener {
             );
         }
     }
+
+    /**
+     * TODO: 监听 BlockRacing 游戏开始事件
+     * 
+     * 需要 BlockRacing 插件提供事件 API，例如：
+     * - BlockRacingGameStartEvent 或类似的游戏开始事件
+     * - 事件需要提供获取游戏模式的方法，用于判断是否为下界模式
+     * 
+     * 预期实现示例：
+     * @EventHandler
+     * public void onBlockRacingGameStart(BlockRacingGameStartEvent event) {
+     *     // 判断当前比赛是否为下界模式
+     *     boolean isNetherMode = event.isNetherMode(); // 或类似的 API 方法
+     *     
+     *     if (isNetherMode) {
+     *         getLogger().info("[BlockRacingAddon] BlockRacing 游戏开始，当前为下界模式");
+     *     } else {
+     *         getLogger().info("[BlockRacingAddon] BlockRacing 游戏开始，当前为普通模式");
+     *     }
+     * }
+     * 
+     * 替代方案（如果没有直接事件）：
+     * 1. 查看 BlockRacing 插件是否提供游戏状态查询 API
+     * 2. 使用反射获取 BlockRacing 内部的游戏状态（不推荐，容易失效）
+     * 3. 联系 BlockRacing 作者添加公开事件 API
+     */
 
 }
