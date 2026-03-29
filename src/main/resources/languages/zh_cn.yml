@@ -1,0 +1,8 @@
+message:
+  wither_or_beacon: "§e凋零骷髅头掉率已提高！"
+  copper_golem: "§e提示：对铜傀儡右键使用完全氧化的铜块可以变成铜傀儡哦！"
+  reinforced_deepslate: "§6提示：使用精准采集可以挖下强化深板岩。"
+  beacon: "§c提示：出现了信标任务方块！砂砾可烧制成玻璃"
+  wither: "§c警告：出现了凋零骷髅任务方块，骷髅头掉率提升！"
+  nether_recipe_enabled: "§a下界模式已启用：注册砂砾熔炉配方（砂砾 -> 玻璃）。"
+  nether_recipe_disabled: "§e下界模式已禁用：移除砂砾熔炉配方（砂砾 -> 玻璃）。"

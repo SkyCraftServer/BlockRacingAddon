@@ -1,0 +1,8 @@
+message:
+  wither_or_beacon: "§cWarning: Wither skull or Beacon is used as a task block — wither skull drop rate increased!"
+  copper_golem: "§eTip: Right-click a Copper Golem with a fully oxidized copper block to transform it into a Copper Golem statue!"
+  reinforced_deepslate: "§6Tip: Use Silk Touch to mine Reinforced Deepslate."
+  beacon: "§cBeacon task block spawned!"
+  wither: "§cWarning: Wither skull task block spawned; skull drop rate increased!"
+  nether_recipe_enabled: "§aNether mode enabled: furnace recipe added (gravel -> glass)."
+  nether_recipe_disabled: "§eNether mode disabled: furnace recipe removed (gravel -> glass)."
